@@ -1,6 +1,7 @@
 ﻿using Bit0.CrunchLog.Cli.Commands;
 using Bit0.CrunchLog.Cli.Extensions;
 using Microsoft.Extensions.DependencyInjection;
+using Spectre.Console;
 using Spectre.Console.Cli;
 
 namespace Bit0.CrunchLog.Cli
@@ -19,6 +20,7 @@ namespace Bit0.CrunchLog.Cli
 
             try
             {
+                AnsiConsole.WriteLine();
                 return app.Run(args);
             }
             catch (Exception ex)
@@ -26,5 +28,11 @@ namespace Bit0.CrunchLog.Cli
                 return app.HandleException(ex);
             }
         }
+    }
+
+    public enum ExitCodes
+    {
+        Sucess,
+        Error
     }
 }

@@ -46,7 +46,7 @@ namespace Bit0.CrunchLog.Cli.Extensions
                 AnsiConsole.WriteException(ex, app.GetExceptionSettings());
             }
 
-            return 1;
+            return (Int32)ExitCodes.Error;
         }
 
         public static ExceptionSettings GetExceptionSettings<TCommand>(this CommandApp<TCommand> app) where TCommand : class, ICommand
