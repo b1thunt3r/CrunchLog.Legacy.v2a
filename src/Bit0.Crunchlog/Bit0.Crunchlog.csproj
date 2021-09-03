@@ -5,9 +5,13 @@
     <Description>Static blog generator</Description>
     <PackageTags>blog; cms; markdown; yaml; generator; platform; static</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bit0.Package.Core" Version="1.0.26" />
+  </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\Bit0.Crunchlog.Sdk\Bit0.Crunchlog.Sdk.csproj" />
+    <ProjectReference Include="..\Bit0.Crunchlog.Sdk\Bit0.CrunchLog.Sdk.csproj" />
   </ItemGroup>
 
   <Import Project="..\..\Solution.props" />
