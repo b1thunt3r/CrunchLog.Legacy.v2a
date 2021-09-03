@@ -11,7 +11,6 @@ namespace Bit0.CrunchLog.Cli.Commands
     {
         public override Int32 Execute([NotNull] CommandContext context, [NotNull] EmptyCommandSettings settings)
         {
-            AnsiConsole.WriteLine();
             AnsiConsole.Markup("[green]CrunchLog[/]");
 #if DEBUG
             AnsiConsole.Markup(" [red]DEBUG BUILD[/]");
