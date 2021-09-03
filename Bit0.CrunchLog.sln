@@ -18,11 +18,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutuin Files", "Solutuin 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sources", "Sources", "{D29FDA8C-D09F-48FC-9CDD-EF0E2C63AFC8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bit0.Crunchlog", "src\Bit0.Crunchlog\Bit0.Crunchlog.csproj", "{16BBAFC1-D600-4418-A2E7-87062C2E63A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bit0.CrunchLog", "src\Bit0.CrunchLog\Bit0.CrunchLog.csproj", "{16BBAFC1-D600-4418-A2E7-87062C2E63A5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bit0.Crunchlog.Cli", "src\Bit0.Crunchlog.Cli\Bit0.Crunchlog.Cli.csproj", "{23EA8BF5-E80A-4FDA-9116-AC9B5A92DCF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bit0.CrunchLog.Cli", "src\Bit0.CrunchLog.Cli\Bit0.CrunchLog.Cli.csproj", "{23EA8BF5-E80A-4FDA-9116-AC9B5A92DCF8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bit0.Crunchlog.Sdk", "src\Bit0.Crunchlog.Sdk\Bit0.Crunchlog.Sdk.csproj", "{7929E737-0129-473B-8DF8-6FB572A5AAA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bit0.CrunchLog.Sdk", "src\Bit0.CrunchLog.Sdk\Bit0.CrunchLog.Sdk.csproj", "{7929E737-0129-473B-8DF8-6FB572A5AAA1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{79C4882D-64C3-417F-9FF1-ECA8E6FE431D}"
 EndProject
