@@ -1,6 +1,7 @@
 <Project>  
   <PropertyGroup>
-    <Version>2.0</Version>
+    <VersionPrefix>2.0</VersionPrefix>
+    <VersionSuffix>alpha.1</VersionSuffix>
     <PackageProjectUrl Condition="'$(PackageProjectUrl)'==''">https://github.com/crunch-log/CrunchLog</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/crunch-log/CrunchLog.git</RepositoryUrl>

@@ -13,23 +13,21 @@
 
     <DebugType>Full</DebugType>
 
-    <AssemblyVersion>$(Version)</AssemblyVersion>
-    <FileVersion>$(Version)</FileVersion>
-    <PackageVersion>$(Version)</PackageVersion>
+    <SourceRevisionId>build$([System.DateTime]::UtcNow.ToString("yyyyMMddHHmmss"))</SourceRevisionId>
 
     <Product Condition="'$(Product)'==''">$(RootNamespace)</Product>
-    <AssemblyName>$(Product)</AssemblyName>
+    <AssemblyName Condition="'$(AssemblyName)'==''">$(Product)</AssemblyName>
     <PackageId>$(Product)</PackageId>
     <AssemblyTitle>$(Product)</AssemblyTitle>
     <ProductName>$(AssemblyTitle)</ProductName>
-    <!--<PackageLicenseExpression>MIT</PackageLicenseExpression>-->
-    <PackageLicenseFile>..\..\LICENSE.txt</PackageLicenseFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <!--<PackageLicenseFile>..\..\LICENSE.txt</PackageLicenseFile>-->
 
     <NoWarn>1701;1702;IDE0002;IDE0022;CC0057;IDE0063;IDE0046;IDE0066;CA1822</NoWarn>
   </PropertyGroup>
 
   <ProjectExtensions>
-    <DotNetVersion>6.0.100</DotNetVersion>
+    <DotNetVersion>6.0.x</DotNetVersion>
   </ProjectExtensions>
 
 </Project>
