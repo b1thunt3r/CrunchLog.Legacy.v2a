@@ -31,6 +31,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.github\workflows\sdk.yml = .github\workflows\sdk.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{B05D4FB3-65D2-4394-A85A-E2399A698641}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bit0.Serilog.Sinks.SpectreConsole", "utils\Bit0.Serilog.Sinks.SpectreConsole\Bit0.Serilog.Sinks.SpectreConsole.csproj", "{412F3EE6-8802-4EC4-A336-E2AD901D1C8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,10 @@ Global
 		{7929E737-0129-473B-8DF8-6FB572A5AAA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7929E737-0129-473B-8DF8-6FB572A5AAA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7929E737-0129-473B-8DF8-6FB572A5AAA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{412F3EE6-8802-4EC4-A336-E2AD901D1C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{412F3EE6-8802-4EC4-A336-E2AD901D1C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{412F3EE6-8802-4EC4-A336-E2AD901D1C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{412F3EE6-8802-4EC4-A336-E2AD901D1C8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +67,7 @@ Global
 		{7929E737-0129-473B-8DF8-6FB572A5AAA1} = {D29FDA8C-D09F-48FC-9CDD-EF0E2C63AFC8}
 		{79C4882D-64C3-417F-9FF1-ECA8E6FE431D} = {EF9D6863-CD22-4552-B57F-A5E4A34D7D2D}
 		{6F135968-65C5-4880-B796-BA9F7181323D} = {79C4882D-64C3-417F-9FF1-ECA8E6FE431D}
+		{412F3EE6-8802-4EC4-A336-E2AD901D1C8C} = {B05D4FB3-65D2-4394-A85A-E2399A698641}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {995072CA-4DE4-43A6-AFB0-293E8B4244C8}
