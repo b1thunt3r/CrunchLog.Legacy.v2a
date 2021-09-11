@@ -9,9 +9,9 @@
   <ItemGroup>
     <PackageReference Include="Bit0.Package.Core" Version="1.0.26" />
   </ItemGroup>
-  
+
   <ItemGroup>
-    <ProjectReference Include="..\Bit0.Crunchlog.Sdk\Bit0.CrunchLog.Sdk.csproj" />
+    <ProjectReference Include="..\Bit0.CrunchLog.Sdk\Bit0.CrunchLog.Sdk.csproj" />
   </ItemGroup>
 
   <Import Project="..\..\Solution.props" />
