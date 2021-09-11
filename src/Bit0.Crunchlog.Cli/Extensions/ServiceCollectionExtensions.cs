@@ -1,7 +1,7 @@
 ﻿using Bit0.CrunchLog.Cli.Logging;
+using Bit0.Serilog.Sinks.SpectreConsole;
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
-using Serilog.Sinks.SystemConsole.Themes;
 using Spectre.Cli.Extensions.DependencyInjection;
 
 namespace Bit0.CrunchLog.Cli.Extensions
@@ -15,19 +15,17 @@ namespace Bit0.CrunchLog.Cli.Extensions
 
         public static IServiceCollection AddSerilog(this IServiceCollection serviceCollection)
         {
-
-            const String outputTemplate = "[{Timestamp:yyyy-MM-dd HH:mm:ss} {Level:w4}] {Message:lj} {NewLine}";
-            const String outputTemplateFile = outputTemplate + "{Exception}";
+            const string outputTemplateFile = "[{Timestamp:s} {Level:w4}] {Message:lj} {NewLine}{Exception}";
 
             serviceCollection.AddLogging(configure =>
                     configure.AddSerilog(new LoggerConfiguration()
                         .MinimumLevel.ControlledBy(LogInterceptor.LogLevel)
-                        .WriteTo.Console(outputTemplate: outputTemplate, theme: AnsiConsoleTheme.Code)
+                        .WriteTo.SpectreConsole()
                         .Enrich.With<LoggingEnricher>()
                         .WriteTo.Map(LoggingEnricher.LogFilePathPropertyName,
                             (logFilePath, wt) =>
                             {
-                                if (!String.IsNullOrWhiteSpace(logFilePath))
+                                if (!string.IsNullOrWhiteSpace(logFilePath))
                                 {
                                     wt.File(path: logFilePath,
                                         outputTemplate: outputTemplateFile
