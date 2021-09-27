@@ -15,7 +15,7 @@ namespace Bit0.CrunchLog.Cli.Extensions
 
         public static IServiceCollection AddSerilog(this IServiceCollection serviceCollection)
         {
-            const string outputTemplateFile = "[{Timestamp:s} {Level:w4}] {Message:lj} {NewLine}{Exception}";
+            const String outputTemplateFile = "[{Timestamp:s} {Level:w4}] {Message:lj} {NewLine}{Exception}";
 
             serviceCollection.AddLogging(configure =>
                     configure.AddSerilog(new LoggerConfiguration()

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Bit0.Package.Core" Version="1.0.26" />
+    <PackageReference Include="System.Text.Json" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>

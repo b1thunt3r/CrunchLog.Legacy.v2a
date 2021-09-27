@@ -1,6 +1,7 @@
 <Project>
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>preview</LangVersion>
     <AnalysisLevel>5</AnalysisLevel>
 
     <Authors>b1thunt3r</Authors>
@@ -23,8 +24,17 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <!--<PackageLicenseFile>..\..\LICENSE.txt</PackageLicenseFile>-->
 
-    <NoWarn>1701;1702;IDE0002;IDE0022;CC0057;IDE0063;IDE0046;IDE0066;CA1822</NoWarn>
+    <NoWarn>1701;1702;IDE0002;IDE0022;CC0057;IDE0063;IDE0046;IDE0066;CA1822;IDE0049</NoWarn>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <Using Include="Microsoft.Extensions.Logging" />
+    <Using Include="System" />
+    <Using Include="System.Collections.Generic" />
+    <Using Include="System.IO" />
+    <Using Include="System.Threading" /> 
+  </ItemGroup>
+
 
   <ProjectExtensions>
     <DotNetVersion>6.0.x</DotNetVersion>

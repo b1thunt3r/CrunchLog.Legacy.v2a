@@ -10,7 +10,7 @@ namespace Bit0.CrunchLog.Cli.Commands
 {
     internal sealed class VersionCommand : Command<EmptyCommandSettings>
     {
-        public override int Execute([NotNull] CommandContext context, [NotNull] EmptyCommandSettings settings)
+        public override Int32 Execute([NotNull] CommandContext context, [NotNull] EmptyCommandSettings settings)
         {
             AnsiConsole.Markup("[green]CrunchLog[/]");
 #if DEBUG
@@ -39,12 +39,12 @@ namespace Bit0.CrunchLog.Cli.Commands
             return 0;
         }
 
-        private static string GetTargetFramework(Type type)
+        private static String GetTargetFramework(Type type)
         {
             return type.Assembly.GetCustomAttribute<System.Runtime.Versioning.TargetFrameworkAttribute>()?.FrameworkName ?? "Unknown";
         }
 
-        private static string GetProductVersion(Type type)
+        private static String GetProductVersion(Type type)
         {
             return FileVersionInfo.GetVersionInfo(type.Assembly.Location).ProductVersion;
         }

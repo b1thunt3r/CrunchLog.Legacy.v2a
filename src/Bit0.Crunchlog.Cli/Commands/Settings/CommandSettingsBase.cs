@@ -26,11 +26,11 @@ namespace Bit0.CrunchLog.Cli.Commands.Settings
 
     internal sealed class VerbosityConverter : TypeConverter
     {
-        private readonly Dictionary<String, LogEventLevel> _lookup;
+        private readonly Dictionary<String, LogEventLevel> _logLeveLookup;
 
         public VerbosityConverter()
         {
-            _lookup = new Dictionary<String, LogEventLevel>(StringComparer.OrdinalIgnoreCase)
+            _logLeveLookup = new Dictionary<String, LogEventLevel>(StringComparer.OrdinalIgnoreCase)
             {
                 {"0", LogEventLevel.Verbose},
                 {"t", LogEventLevel.Verbose},
@@ -77,7 +77,7 @@ namespace Bit0.CrunchLog.Cli.Commands.Settings
         {
             if (value is String stringValue)
             {
-                var result = _lookup.TryGetValue(stringValue, out var verbosity);
+                var result = _logLeveLookup.TryGetValue(stringValue, out var verbosity);
                 if (!result)
                 {
                     throw new InvalidOperationException($"The value '{value}' is not a valid verbosity.");
